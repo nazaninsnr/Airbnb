@@ -275,7 +275,7 @@ img {
   .feature .feature-title {
     text-align: center;
   }
-  
+
   .feature .feature-wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
