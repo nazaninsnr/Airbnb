@@ -19,6 +19,10 @@ a {
   color: #333;
 }
 
+.grey {
+  color: #6d6d6d;
+}
+
 .container {
   max-width: 1240px;
   margin: auto;
@@ -137,6 +141,40 @@ a {
 }
 /* Sort Bar End */
 
+/* List */
+.list {
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.list .card {
+  max-width: 300px;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.list .card-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.list p {
+  padding-bottom: 4px;
+}
+
+img {
+  border-radius: 15px;
+}
+/* List End */
+
 @media screen and (max-width: 940px) {
   .top-bar {
     display: flex;
@@ -184,11 +222,19 @@ a {
   .mobile {
     display: block;
   }
+
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media screen and (max-width: 680px) {
   .top-bar .intro,
   p {
     font-size: 0.8rem;
+  }
+
+  .list {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
