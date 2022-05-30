@@ -190,7 +190,7 @@ img {
   display: inline;
 }
 
-.feature-wrapper {
+.feature .feature-wrapper {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-auto-rows: 200px;
@@ -272,6 +272,10 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .feature .feature-title {
+    text-align: center;
+  }
+  
   .feature .feature-wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
