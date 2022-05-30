@@ -41,7 +41,7 @@
             <li><a href="" class="nav-link">Feature</a></li>
             <li><a href="" class="nav-link">Popular</a></li>
           </ul>
-          <div class="mobile">
+          <div onclick="mobileMenu()" class="mobile">
             <i class="fa-solid fa-bars"></i>
           </div>
         </div>
@@ -84,5 +84,15 @@
       </div>
       <!-- End Sort Bar -->
     </div>
+
+    <script>
+      const menuBtn = document.querySelector ('.mobile');
+      const navMenu = document.querySelector ('.nav-menu');
+
+      const mobileMenu = () => {
+        menuBtn.classList.toggle ('active');
+        navMenu.classList.toggle ('active');
+      }
+    </script>
   </body>
 </html>
