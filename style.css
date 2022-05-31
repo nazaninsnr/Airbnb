@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -209,6 +213,38 @@ img {
 }
 /* Feature End */
 
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  padding: 1rem 0;
+}
+
+.footer .right-menu,
+.left-menu {
+  display: flex;
+}
+
+.footer .right-menu li {
+  padding-left: 1rem;
+}
+
+.footer .left-menu li {
+  padding-right: 1rem;
+}
+/* Footer End */
+
+/* Scroll */
+.top {
+  display: flex;
+}
+
+.top a {
+  margin: auto;
+  font-size: 2rem;
+}
+
 @media screen and (max-width: 940px) {
   .top-bar {
     display: flex;
@@ -282,5 +318,10 @@ img {
 
   .feature .main {
     grid-column: span 2;
+  }
+
+  .footer .right-menu,
+  .left-menu {
+    flex-direction: column;
   }
 }

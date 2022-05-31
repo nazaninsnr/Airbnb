@@ -15,7 +15,7 @@
     <!-- Container -->
     <div class="container">
       <!-- Top Bar -->
-      <div class="top-bar">
+      <div id="top" class="top-bar">
         <h3 class="intro">Introducing the new Airbnb</h3>
         <p>Learn More</p>
       </div>
@@ -37,9 +37,9 @@
         </div>
         <div class="menu">
           <ul class="nav-menu">
-            <li><a href="" class="nav-link">List</a></li>
-            <li><a href="" class="nav-link">Feature</a></li>
-            <li><a href="" class="nav-link">Popular</a></li>
+            <li><a onclick="closeMenu()" href="#list" class="nav-link">List</a></li>
+            <li><a onclick="closeMenu()" href="#feature" class="nav-link">Feature</a></li>
+            <li><a onclick="closeMenu()" href="#popular" class="nav-link">Popular</a></li>
           </ul>
           <div onclick="mobileMenu()" class="mobile">
             <i class="fa-solid fa-bars"></i>
@@ -85,7 +85,7 @@
       <!-- End Sort Bar -->
 
       <!-- List -->
-      <div class="list">
+      <div id="list" class="list">
         <!-- Card -->
         <div class="card">
           <img
@@ -195,7 +195,7 @@
       </div>
       <!-- End List -->
       <!-- Feature -->
-      <div class="feature">
+      <div id="feature" class="feature">
         <div class="feature-title">
           <h1>Feature</h1>
         </div>
@@ -234,6 +234,66 @@
         </div>
       </div>
       <!-- End Feature -->
+      <!-- Popular -->
+      <div id="popular" class="feature">
+        <div class="feature-title">
+          <h1>Popular</h1>
+        </div>
+        <div class="feature-wrapper">
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1623298317883-6b70254edf31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60
+             "
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1571939228382-b2f2b585ce15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
+          </div>
+          <div class="main">
+            <img
+              src=" https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTZ8fGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1601136800312-d4dc1f50554b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FzdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <!-- End Popular -->
+      <!-- Scroll to top -->
+      <div class="top">
+        <a href="#top">
+          <i class="fa-solid fa-chevron-up"></i>
+        </a>
+      </div>
+      <!-- Footer -->
+      <div class="footer">
+        <ul class="left-menu">
+          <li>Airbnb</li>
+          <li>Privacy</li>
+          <li>Terms</li>
+          <li>Destinations</li>
+        </ul>
+        <ul class="right-menu">
+          <li>Support</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <!-- End Footer -->
     </div>
     <!-- End Container -->
     <script>
@@ -244,6 +304,10 @@
         menuBtn.classList.toggle("active");
         navMenu.classList.toggle("active");
       };
+
+      const closeMenu = () => {
+        navMenu.classList.toggle("active")
+      }
     </script>
   </body>
 </html>
